@@ -1,9 +1,9 @@
 @import 'variables';
 
-@mixin text($size: 20px, $lineHeight: 35px, $weight: 600, $color: $black) {
+@mixin text($size: 20px, $lineHeight: 35px, $color: $black, $font: $helveticaNeueRegular) {
+     font-family: $font;
      font-size: $size;
      line-height: $lineHeight;
-     font-weight: $weight;
      color: $color;
 }
 

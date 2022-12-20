@@ -1,3 +1,95 @@
 @import "static/mixins";
 @import "static/variables";
 @import url('../css/reset.css');
+
+@font-face {
+     font-family: 'Helvetica Neue Regular';
+     src: url(../fonts/helveticaneuecyr_roman.otf);
+}
+
+@font-face {
+     font-family: 'Inter Medium';
+     src: url(../fonts/Inter-Medium.otf);
+}
+
+@font-face {
+     font-family: 'TT Travels Medium';
+     src: url(../fonts/TTTravels-Medium.ttf);
+}
+
+@font-face {
+     font-family: 'TT Travels Bold';
+     src: url(../fonts/TTTravels-Bold.ttf);
+}
+
+.nav{
+     padding: 20px 60px;
+     @include flex();
+     &__part{
+          &:first-child{
+               @include flex($jc: flex-start);
+          }
+          &:last-child{
+               @include flex(flex-end, flex-end);
+               flex-direction: column;
+          }
+     }
+     &__company{
+          margin-left: 20px;
+          @include text(14px, 120%, $gray, $helveticaNeueRegular);
+     }
+     &__contact{
+          @include text(16px, 100%, $black, $travelsMedium);
+     }
+     &__btn{
+          margin-top: 4px;
+          @include text(16px, 100%, $green, $interMedium);
+     }
+}
+
+.header{
+     @include flex(center, center);
+     flex-direction: column;
+     padding-top: 60px;
+     &__title{
+          margin-top: 16px;
+          max-width: 1080px;
+          text-align: center;
+          @include text(64px, 100%, $black, $travelsBold);
+     }
+     &__text{
+          margin: 24px 0 54px;
+          @include text(24px, 28px, $black, $helveticaNeueRegular);
+          padding-bottom: 2px;
+          border-bottom: 2px solid $green;
+     }
+     &__img{
+          position: relative;
+          padding: 0 60px;
+          width: 100%;
+          img{
+               width: 100%;
+               border-radius: 5px;
+          }
+     }
+     &__award{
+          position: absolute;
+          top: 0;
+          right: 80px;
+          background-color: #fff;
+          padding: 0 12px 16px 12px;
+          border-radius: 0 0 5px 5px;
+          @include flex();
+          flex-direction: column;
+          img{
+               width: 30px;
+          }
+          p{
+               margin-top: 10px;
+               max-width: 170px;
+               text-align: center;
+               letter-spacing: -0.04em;
+               @include text(16px, 110%, $black, $travelsMedium);
+          }
+     }
+}

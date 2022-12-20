@@ -1,0 +1,115 @@
+@import url("../css/reset.css");
+@font-face {
+  font-family: "Helvetica Neue Regular";
+  src: url(../fonts/helveticaneuecyr_roman.otf);
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url(../fonts/Inter-Medium.otf);
+}
+@font-face {
+  font-family: "TT Travels Medium";
+  src: url(../fonts/TTTravels-Medium.ttf);
+}
+@font-face {
+  font-family: "TT Travels Bold";
+  src: url(../fonts/TTTravels-Bold.ttf);
+}
+.nav {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__part:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav__part:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.nav__company {
+  margin-left: 20px;
+  font-family: "Helvetica Neue Regular";
+  font-size: 14px;
+  line-height: 120%;
+  color: #646562;
+}
+.nav__contact {
+  font-family: "TT Travels Medium";
+  font-size: 16px;
+  line-height: 100%;
+  color: #1a1a1a;
+}
+.nav__btn {
+  margin-top: 4px;
+  font-family: "Inter Medium";
+  font-size: 16px;
+  line-height: 100%;
+  color: #A0A747;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+.header__title {
+  margin-top: 16px;
+  max-width: 1080px;
+  text-align: center;
+  font-family: "TT Travels Bold";
+  font-size: 64px;
+  line-height: 100%;
+  color: #1a1a1a;
+}
+.header__text {
+  margin: 24px 0 54px;
+  font-family: "Helvetica Neue Regular";
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1a1a;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #A0A747;
+}
+.header__img {
+  position: relative;
+  padding: 0 60px;
+  width: 100%;
+}
+.header__img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.header__award {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  background-color: #fff;
+  padding: 0 12px 16px 12px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.header__award img {
+  width: 30px;
+}
+.header__award p {
+  margin-top: 10px;
+  max-width: 170px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  font-family: "TT Travels Medium";
+  font-size: 16px;
+  line-height: 110%;
+  color: #1a1a1a;
+}
+/*# sourceMappingURL=style.css.map */

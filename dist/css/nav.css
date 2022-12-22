@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary: #ad2622;
+  --social-hover: #5a0c0a;
+  --link-hover: #d5d7d7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1320px;
+}
+
+.shadow {
+  top: 0;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transition: 0.3s ease;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__part:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__link-social {
+  margin-left: 32px;
+}
+.header__link-social i {
+  color: var(--primary);
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+.header__link-social:hover i {
+  color: var(--social-hover);
+}
+.header__btn-additional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 240px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  background-color: var(--primary);
+  position: relative;
+}
+.header__btn-additional .hover__btn {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: -36px;
+  top: 0;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 100% 100% 0;
+  transition: 0.3s ease;
+}
+.header__btn-additional span {
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.header__quick {
+  background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: -16%;
+  transition: 0.3s ease;
+}
+.header__quick-title {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.header__quick-link {
+  padding: 16px 24px;
+  display: block;
+  border-top: 1px solid var(--link-hover);
+  color: var(--primary);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav {
+  padding: 20px 0;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.nav__link:hover {
+  color: var(--link-hover);
+}
+/*# sourceMappingURL=nav.css.map */
